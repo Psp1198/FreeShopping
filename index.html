@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Free Shopping
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+     
+    </head>
+    <body>
+<header>
+<!--Topmost bar-->
+            <div class="upbar"> 
+            <img src="img/logo.JPG" class="logo alignLeft">
+            <div class="search-container" >
+                    <input type="text" placeholder="What are you looking for?" id="searchbox">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>  
+            <a href="" class="alignRight" style="background-color: #0047ab;color:white;padding: 1.25vh 1.25vw;border-radius:25px ">Career with us</a>
+            </div>
+<!--xxxxxxxx Topmost Bar xxxxxxxx    -->
+<!--Navigation Bar-->
+            <ol  class="navbar">
+                <li><a class="activenav" href="">Home</a></li>
+                <li><a  href="">Freebies</a></li>
+                <li><a  href="" >News</a></li>
+                <div class="dropdown">
+                   <button class="dropbtn" onclick="myFunction()">Offers
+                        <i class="fa fa-caret-down"></i>
+                   </button>
+                 <div class="dropdown-content" id="myDropdown">
+                     <a href="#">Mobile Recharge</a>
+                     <a href="#">Electronics</a>
+                     <a href="#">Restaurant</a>
+                     <a href="#">Travels</a>
+                     <a href="#">Groceries</a>
+                 </div>
+                </div> 
+                
+                <li style="float: right"><a  href="" >Login</a></li>
+                <li style="float: right"><a  href="" >Register</a></li>
+                <li style="float: right;"><button id="disc">Student Discounts</button></li>
+            </ol>
+<!-- xxxxxxxx Navigation Bar xxxxxxxxxxx -->
+</header>
+        
+<main>
+<section> 
+<!--Slideshow-->
+      <div class="slideshow-container">
+          <div class="mySlides fade">
+          <img src="img/slide1.jpg" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+          <img src="img/slide2.jpg" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+          <img src="img/slide3.jpg" style="width:100%">
+          </div>
+          
+          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+      </div>
+<!--xxxxxxxxx Slideshow xxxxxxxxx-->
+</section> 
+  <section>
+<!-- Merchants,Offers,Deals-->
+      <div class="innerdata" >   
+
+      <div class="indata"style="position: relative;">
+<!-- Merchants-->
+      <h1 id="featuredmerchants">Today's Featured Merchants</h1>
+       </div>
+        <a id="viewmore">View more></a>
+          <div class="merchantcontainer">
+             
+              <ul class="merchantlist" id="merlist">
+                  <li>
+                      <div class="merchantcard">
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                           <div class="flip-card-front">
+                               <img src="img/merchants/amazonlogo.jpg" style="height: 100%;width: 100%;object-fit: fill;">
+                           </div>
+                           <div class="flip-card-back">
+                             <h1>25 Coupons</h1> 
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                  </li>
+                  <li>
+                     <div class="merchantcard">
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                           <div class="flip-card-front">
+                               <img src="img/merchants/hplogo.jpg" style="height: 100%;width: 100%;object-fit: fill;">
+                           </div>
+                           <div class="flip-card-back">
+                             <h1>25 Coupons</h1> 
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                  </li>
+                  <li>   
+                      <div class="merchantcard">
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                           <div class="flip-card-front">
+                               <img src="img/merchants/pizzahutlogo.jpg" style="height: 100%;width: 100%;object-fit: fill;">
+                           </div>
+                           <div class="flip-card-back">
+                             <h1>25 Coupons</h1> 
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                  </li>
+                  <li>
+                      <div class="merchantcard">
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                           <div class="flip-card-front">
+                               <img src="img/merchants/adidaslogo.jpg" style="height: 100%;width: 100%;object-fit: fill;">
+                           </div>
+                           <div class="flip-card-back">
+                             <h1 style="z-index: 999;">25 Coupons</h1> 
+                           </div>
+                        </div>
+                    </div>
+                </div></li>
+                  <li>
+                      <div class="merchantcard">
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                           <div class="flip-card-front">
+                               <img src="img/merchants/raybanlogo.jpg" style="height: 100%;width: 100%;object-fit: fill;">
+                           </div>
+                           <div class="flip-card-back">
+                             <h1 style="z-index: 999;">25 Coupons</h1> 
+                           </div>
+                        </div>
+                    </div>
+                </div></li>
+                  <li>
+                  <div class="merchantcard">
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                           <div class="flip-card-front">
+                               <img src="img/merchants/nblogo.jpg" style="height: 100%;width: 100%;object-fit: fill;">
+                           </div>
+                           <div class="flip-card-back">
+                             <h1>25 Coupons</h1> 
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                  </li>
+              </ul>
+          </div>
+          <div class="indata" style="position: relative;margin-top:5%;">
+<!--xxxxxxx Merchants xxxxxxxxx-->              
+    
+<!--Deals-->
+      <h1 id="featuredmerchants">Today's Best Deals</h1>
+       </div>
+        <a id="viewmore">View more></a>
+         <div class="dealcontainer">
+              <ul class="deallist" id="dellist">
+                  <li>
+                      <div class="dealcard">
+                          <img src="img/deals/pizzadeal.jpg" style="height: 100%;width: 100%;object-fit: fill;">
+                          <div class="overlay">
+                            <div><img src="img/deals/sjpizzalogo.jpg" class="innerimage"></div>
+                            <div class="text">Buy 1 get 1 free!!! 50% off</div>
+                            <div class="text" style="font-size:1vw; ">Smoking Joes' Wednesday</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="dealcard">
+                          <img src="img/deals/amazondeal.jpg" style="height: 100%;width: 100%;object-fit: fill;" class="image">
+                          <div class="overlay">
+                            <div><img src="img/merchants/amazonlogo.jpg" class="innerimage"></div>
+                            <div class="text">Big savings, no waiting!</div>
+                            <div class="text" style="font-size:1vw; ">Amazon Black Friday</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="dealcard">
+                          <img src="img/deals/RBdeal.jpg" style="height: 100%;width: 100%;object-fit: fill;">
+                           <div class="overlay">
+                            <div><img src="img/merchants/raybanlogo.jpg" class="innerimage"></div>
+                            <div class="text">25% Off!</div>
+                            <div class="text" style="font-size:1vw; ">RayBan Sale</div>
+                          </div>
+                      </div>
+                      
+                  </li>
+              </ul>
+      </div>
+<!--xxxxxxxx Deals xxxxxxxx-->    
+          
+<!--Coupons-->
+      <div class="indata" style="position: relative;margin-top:5%;">
+      <h1 id="featuredmerchants">Top Offers</h1>
+       </div>
+           <div class="couponcontainer">
+               <table style="width: 100%;border: none;" class="coupontable">
+                   <tr>
+                       <td>
+                        <div class="coupon">
+                          <img src="img/coupons/ham.jpg" alt="Avatar" style="width:100%;width:100%;height: 15vw;object-fit: fill;">
+                         <div class="container" style="background-color:white">
+                           <h4><b>20% OFF YOUR PURCHASE</b></h4> 
+                         </div>
+                         <div class="container">
+                             <center><button type="submit" id="couponcode">Get Coupon Code</button></center>
+                            <p class="expire">Expires: Mar 11, 2019
+                             <span> 
+                             <div id="like" class="rating">
+                             <input type="radio" id="heart_1" name="like" value="1" />
+                             <label for="heart_1"  style="font-size: 2vw">&#10084;</label>
+                            </div>
+                            </span>
+                            </p>
+                        </div>
+                       
+                       </div>
+                       </td>
+                       <td>
+                        <div class="coupon">
+                          <img src="img/coupons/batra.jpg" alt="Avatar" style="width:100%;height: 15vw;object-fit: fill;">
+                         <div class="container" style="background-color:white">
+                           <h4><b>20% OFF YOUR PURCHASE</b></h4> 
+                         </div>
+                         <div class="container">
+                            <center><button type="submit" id="couponcode">Get Coupon Code</button></center>
+                            <p class="expire">Expires: Mar 11, 2019
+                            <span> 
+                             <div id="like" class="rating">
+                             <input type="radio" id="heart_2" name="like2" value="2" />
+                             <label for="heart_2"  style="font-size: 2vw">&#10084;</label>
+                            </div>
+                            </span>
+                             </p>
+                        </div>
+                       </div>
+                       </td>
+                       <td>
+                        <div class="coupon">
+                          <img src="img/coupons/clothes.png" alt="Avatar" style="width:100%;height: 15vw;object-fit: fill;">
+                         <div class="container" style="background-color:white">
+                           <h4><b>20% OFF YOUR PURCHASE</b></h4> 
+                         </div>
+                         <div class="container">
+                            <center><button type="submit" id="couponcode">Get Coupon Code</button></center>
+                            <p class="expire">Expires: Mar 11, 2019
+                            <span> 
+                             <div id="like" class="rating">
+                             <input type="radio" id="heart_3" name="like3" value="3" />
+                             <label for="heart_3" style="font-size: 2vw">&#10084;</label>
+                            </div>
+                            </span>
+                             </p>
+                        </div>
+                       </div>
+                       </td>
+                   </tr>
+                   
+                   <tr>
+                       <td>
+                        <div class="coupon">
+                          <img src="img/coupons/bags.png" alt="Avatar" style="width:100%;height: 15vw;object-fit: fill;">
+                         <div class="container" style="background-color:white">
+                           <h4><b>20% OFF YOUR PURCHASE</b></h4> 
+                         </div>
+                         <div class="container">
+                            <center><button type="submit" id="couponcode">Get Coupon Code</button></center>
+                            <p class="expire">Expires: Mar 11, 2019
+                             <span> 
+                             <div id="like" class="rating">
+                             <input type="radio" id="heart_4" name="like4" value="4" />
+                             <label for="heart_4"  style="font-size: 2vw">&#10084;</label>
+                            </div>
+                            </span>
+                            </p>
+                        </div>
+                       </div>
+                       </td>
+                       <td>
+                        <div class="coupon">
+                          <img src="img/coupons/mickeymehta.jpg" alt="Avatar" style="width:100%;height: 15vw;object-fit: fill;">
+                         <div class="container" style="background-color:white">
+                           <h4><b>20% OFF YOUR PURCHASE</b></h4> 
+                         </div>
+                         <div class="container">
+                           <center><button type="submit" id="couponcode">Get Coupon Code</button></center>
+                            <p class="expire">Expires: Mar 11, 2019
+                             <span> 
+                             <div id="like" class="rating">
+                             <input type="radio" id="heart_5" name="like5" value="5" />
+                             <label for="heart_5" style="font-size: 2vw">&#10084;</label>
+                            </div>
+                            </span>
+                             </p>
+                        </div>
+                       </div>
+                       </td>
+                       <td>
+                        <div class="coupon">
+                          <img src="img/coupons/toys.jpg" alt="Avatar" style="width:100%;height: 15vw;object-fit: fill;">
+                         <div class="container" style="background-color:white">
+                           <h4><b>20% OFF YOUR PURCHASE</b></h4> 
+                         </div>
+                         <div class="container">
+                          <center><button type="submit" id="couponcode">Get Coupon Code</button></center>
+                            <p class="expire">Expires: Mar 11, 2019
+                                <span> 
+                             <div id="like" class="rating">
+                             <input type="radio" id="heart_6" name="like6" value="6" />
+                             <label for="heart_6" style="font-size: 2vw">&#10084;</label>
+                            </div>
+                            </span>
+                             </p>
+                        </div>
+                       </div>
+                       </td>
+                       
+                   </tr>
+                   
+               </table>
+          </div>
+      </div>
+<!--xxxxxx Coupons xxxxxxx-->
+      
+    <center><button type="submit" id="loadmore">Load More</button></center>
+      
+<!-- xxxxxxx Merchants,Offers,Deals xxxxxxxxx-->
+    </section>
+	  </main>
+<footer class="page-footer">
+<!--    Social Media bar-->
+         <section class="footertop">
+              <p id="footerpara">Get connected with us on social networks!</p>
+              <ol id="footerlist">
+                  <li class="facebook" ><a title="Facebook" ><i class="fa fa-facebook" ></i></a></li>
+                  <li class="twitter"><a title="Twitter" ><i class="fa fa-twitter"></i></a></li>
+                  <li class="linkedin"><a title="Linkedin" ><i class="fa fa-linkedin "></i></a></li>
+                  <li class="googleplus"><a title="Google Plus" ><i class="fa fa-google-plus"></i></a></li>
+                  <li class="pintrest"><a title="Pinterest" ><i class="fa fa-pinterest"></i></a></li>
+                  <li class="instagram"><a title="Instagram" ><i class="fa fa-instagram"></i></a></li>
+                  <li class="slideshare"><a title="Slideshare" ><i class="fa fa-slideshare"></i></a></li>
+                  <li class="youtube"><a title="Youtube" ><i class="fa fa-youtube"></i></a></li>
+              </ol>
+              </section>
+<!--xxxxxxxx Social Media bar xxxxxxxxxx-->  
+    
+<!--    Company info and other links-->
+         <section class="footermid">
+             <table width="100%"class="table">
+           
+                      <tr>
+                          <th align="left">Get to know us</th>
+                          <th align="left">Suport</th>
+                          <th align="left">Never miss out exclusive deals!</th>
+                      </tr>
+                       <tr>
+                          <td align="left"><a>About us</a></td>
+                          <td align="left"><a>Advertise with us</a></td>
+                            <td rowspan="3" id="email">
+                              <h3>Subscribe Us</h3>
+                               <div class="email-container" >
+                               <input type="text" placeholder="Enter your email" id="searchbox">
+                               <button type="submit" id="joinnow">Join Now</button>
+                               </div>  
+          
+                           </td>
+                      </tr>
+                       <tr>
+                          <td align="left"><a>Our Team</a></td>
+                          <td align="left"><a>Campus Ambassador</a></td>
+                         
+                      </tr>
+                      <tr>
+                          <td align="left"><a>FAQs</a></td>
+                          <td align="left"><a>Feedback</a></td>
+                      </tr>
+                      <tr>
+                          <td align="left"><a>Testimonials</a></td>
+                          <td align="left"><a>Win a gift card</a></td>
+                      </tr>
+                      <tr>
+                          <td align="left"><a>Media Contact</a></td>
+                          <td align="left"><a>Terms and conditions</a></td>
+                      </tr>
+                      <tr>
+                          <td align="left"><a>Investors</a></td>
+                          <td align="left"><a>Privacy Policy</a></td>
+                      </tr>
+                  
+              </table></section>
+         <section class="footerbottom"> <p id="footerbottom">Made by Pooja Pache
+             <br>
+              Freeshopping: A division of Sahu technologies.
+             <br>
+             Copyright 2015-2020. Freeshopping. All Rights Reserved. All Content, Trademarks And Logos Are Copyright Of Their Respective Owners.</p>
+          </section>
+<!--xxxxxxx    Company info and other links xxxxxxxxx-->
+    
+</footer>  
+  
+<script>
+        
+//Search box animation code
+		$(function(){
+			$('#searchbox').focus(function(){
+				$(this).animate({width: '35vw'}, 500)
+			}).blur(function(){
+				$(this).animate({width: '20vw'}, 500)
+			});
+		});
+        
+//Dropdown button on click code  
+       function myFunction() {
+     
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+// Close the dropdown if the user clicks outside of it
+       window.onclick = function(e) 
+       {
+           if (!e.target.matches('.dropbtn')) 
+           {
+              var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) 
+              {
+                  myDropdown.classList.remove('show');
+              }
+           }
+       }
+       
+       
+//Slideshow code
+        var slideIndex=0;
+        showSlides();
+        // Next/previous controls
+      function changeSlide(n) 
+      {
+        slideIndex+=(n-1);
+        showSlides();
+      }
+
+        function showSlides()
+        {
+            var i;
+            var slides=document.getElementsByClassName("mySlides");
+            for(i=0;i<slides.length;i++)
+                {
+                    slides[i].style.display="none";
+                }
+            slideIndex++;
+            if(slideIndex>slides.length)
+             {
+                    slideIndex=1;
+             }
+            if (slideIndex < 1) 
+            {
+                slideIndex = slides.length;
+            }
+
+            slides[slideIndex-1].style.display="block";
+            setTimeout(showSlides,10000);
+        }
+	</script>
+    </body>
+</html>

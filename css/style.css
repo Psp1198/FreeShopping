@@ -1,0 +1,801 @@
+html,body
+{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Sans-serif;
+}
+
+/*Topbar*/
+.upbar
+{
+    display: flex;
+    align-items: baseline;
+    height: 11vh;
+    width:98%;
+    padding: 1%;
+    position: relative;
+}
+.alignLeft
+{
+    float: left;
+}
+alignRight
+{
+    float: right;
+}
+
+.logo
+{
+    height: 10vh;
+    width: 20vw;
+    left: 1%;
+    position: absolute;
+}
+.upbar .search-container
+{
+  
+    color: #0047ab;
+    top: 0.5;
+    left: 35%;
+    border-radius: 25px;
+    position: absolute;
+}
+
+.search-container input[type=text]
+{
+    color: #0047ab;
+    width: 20vw;
+    font-size: 2.5vh;
+    padding: 0.5vw;
+    border-radius: 25px;
+    position: relative;
+}
+.input:focus {
+    outline: none !important;
+    border:1px solid red;
+    box-shadow: 0 0 10px #719ECE;
+}
+.upbar .search-container button {
+    
+  padding: 0.5vw 0.7vw;
+  margin-top: 2vw;
+  margin-right: 4vw;
+  background: #ddd;
+  font-size: 3vh;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  top: 0;
+  left: 0%;
+  background-color:#0047ab;
+  color:white;
+  position: relative;
+}
+
+.upbar a{
+  text-decoration: none;
+  color: #0047ab;
+  font-size: 3vh;
+  top: 7vh;
+  right:1%;
+  position: absolute;
+}
+.upbar a:visited { text-decoration: none; color: #0047ab;}
+.upbar a:hover { text-decoration: none; color: #0047ab;}
+.upbar a:focus { text-decoration: none; color: #0047ab;}
+.upbar a:hover,.upbar a:active { text-decoration: none; color:#0047ab;}
+
+/*xxxxxxxxxx Topbar xxxxxxxxxxxxx*/
+
+
+/*Nav bar*/
+ol
+{
+    list-style-type: none;
+    margin-top: 1%;
+    margin-bottom:0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#0047ab ;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 3vh 2vw;
+  text-decoration: none;
+  font-size: 3vh;
+}
+
+#disc
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 2vh 1vw;
+  text-decoration: none;
+  font-size: 2vh;
+  margin: 1.5vh 1vw;
+  background-color: red;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+font-weight: bold;
+}
+#disc:hover,#disc:active
+{
+     background-color: #EE7600; 
+}
+
+.activenav {
+  background-color: #EE7600;
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 3vh;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 3vh 2vw;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: #EE7600;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0047ab;
+  min-width: 15vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 3vh 2vw;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 2.5vh;
+}
+
+.show {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color:rgba(0,142,204,0.18);
+  color: white;
+  font-weight: bolder;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*xxxxxxxxxxx Nav bar xxxxxxxxxxxxxxxx*/
+
+/*Slideshow container*/
+img 
+{
+    vertical-align: middle;
+    height: 100%;
+}
+
+.slideshow-container
+{
+    width:100%;
+    position: relative;
+    margin-top:0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mySlides
+{
+
+    display:none;
+    height: 73.5vh;
+    max-height: 100%;
+}
+
+.prev,.next
+{
+    cursor:pointer;
+    position: absolute;
+    top:50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next
+{
+    right: 0;
+    border-radius:3px 0 0 3px;
+}
+
+.prev:hover,.next:hover
+{
+    background-color:rgba(0,142,204,0.8);
+}
+
+.fade
+{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade 
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade
+{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/*xxxxxxxxxxxxx Slideshow container xxxxxxxxxxxxxxxxx*/
+
+
+/*Merchants,Offers,Deals*/
+.innerdata
+{
+    height: auto;
+    width:auto;
+    margin-right: 4vw;
+    margin-left: 4vw;
+    margin-top: 10vh;
+    padding:2%;
+    position: relative;
+}
+
+
+.indata
+{
+    height: auto;
+    width:100%;
+    display: flex;
+}
+
+/*Merchants*/
+.innerdata .indata #featuredmerchants
+{
+
+    width: auto;
+    font-size: 3vw;
+    padding: 0;
+    margin: 0;
+    vertical-align: text-bottom;
+    position: relative;
+}
+
+.innerdata #viewmore
+{
+    float: right;
+    font-size: 1vw;
+    vertical-align: text-top;
+    bottom: 2vh;
+    position: relative;
+    margin-right: 5%;
+    padding: 0;
+    cursor: pointer;
+    color:#0047ab;
+}
+
+.innerdata #viewmore:hover,.innerdata #viewmore:active
+{
+    color: red;
+}
+
+.innerdata .merchantcontainer
+{
+    width: auto;
+    height:10vw;
+}
+.innerdata .merchantcontainer .merchantlist
+{
+    width: 100%;
+    height: auto;
+    padding:0.5%;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+    position: relative;
+       
+}
+#merlist li .merchantcard
+{
+    width: 10vw;
+    height: 10vh;
+    padding: 1vw;
+    margin: 1vw;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.flip-card-back {
+  background-color:#0047ab;
+  color: white;
+  font-size: 1vw;
+  transform: rotateY(180deg);
+  z-index: 1;
+  cursor: pointer;
+}
+
+/*xxxxxxxxxx Merchants xxxxxxxxxxxxxx*/
+
+/*Deals*/
+.innerdata #deals
+{
+
+    width: auto;
+    font-size: 3vw;
+    padding: 0;
+    margin: 0;
+    vertical-align: text-bottom;
+    position: relative;
+}
+
+
+.innerdata .dealcontainer
+{
+    width: auto;
+    height:50vh;
+    position: relative;
+}
+.innerdata .dealcontainer .deallist
+{
+    width: auto;
+    height: 50vh;
+    padding:0.5%;
+    margin-top: 1%;
+    list-style-type: none;
+    overflow: hidden;
+    position:absolute;
+}
+#dellist li .dealcard
+{
+    width: 24vw;
+    width: 24vw;
+    height: 40vh;
+    margin: 2vw;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid black;
+    position:relative;
+    
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom:0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.68);
+  overflow: hidden;
+  width: 100%;
+  height: 30%;
+}
+
+.text {
+  color: white;
+  font-size: 1.5vw;
+  position: relative;
+  padding: 2%;
+  vertical-align: middle;
+  text-align: center;
+  margin-left: 2%;
+}
+
+.innerimage
+{
+    position: absolute;
+    margin:2%;
+    width: 15%;
+    height: 80%;
+}
+/*xxxxxxxx Deals xxxxxxxxxxx*/
+
+/*Coupons*/
+.coupontable tr td
+{
+   padding:2%;
+}
+.coupon {
+  border: 5px solid black;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  max-width: 20vw;
+  background-color: red;
+}
+.coupon:hover
+{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+.container {
+  padding: 2px 16px;
+  background-color: #f1f1f1;
+}
+#couponcode
+{
+    color: white;
+    background-color:#0047ab ;
+    font-size: 2.5vh;
+    padding:1.5vh 1.5vw;
+    border-radius:0.5vw;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+#couponcode:hover
+{
+     background-color:#EE7600 ;
+}
+.promo {
+  background:none;
+  padding: 1vw;
+}
+
+.expire {
+  color: red;
+  display: inline;
+  margin: 2%;
+font-size: 1vw;
+font-weight: bold;
+}
+
+.innerdata .couponcontainer
+{
+     width: auto;
+    height:auto;
+}
+
+.rating {
+  position: relative;
+  top: 0;
+  left: 15%;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  padding: 2px 4px;
+  margin: 0;
+  display: inline-block;
+  overflow: hidden;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  vertical-align: middle;
+  text-align: right;
+}
+.rating:not(:checked) > input {
+  display: none;
+}
+
+
+#like:not(:checked) > label {
+  cursor:pointer;
+  float: right;
+  width: 2vw;
+  height: 2vw;
+  display:block;
+  color: rgba(233, 54, 40, .4);
+  line-height: 2vw;
+  text-align: center;
+  
+}
+#like:not(:checked) > label:hover,
+#like:not(:checked) > label:hover ~ label {
+  color: rgba(233, 54, 40, .6);
+}
+#like > input:checked + label:hover,
+#like > input:checked + label:hover ~ label,
+#like > input:checked ~ label:hover,
+#like > input:checked ~ label:hover ~ label,
+#like > label:hover ~ input:checked ~ label {
+  color: rgba(233, 54, 40, .8);
+}
+#like > input:checked ~ label {
+  color: rgb(233, 54, 40);
+}
+
+/*xxxxxxxxxxxxxxxxxxxxx Coupons xxxxxxxxxxxxxxxx*/
+
+/*Load More Button*/
+#loadmore
+{
+    color: white;
+    background-color:#0047ab ;
+    font-size: 1.5vw;
+    padding:1.5vh 1.5vw;
+    border-radius:0.5vw;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#loadmore:hover
+{
+      background-color:#EE7600 ;
+}
+/*xxxxxxxxxxxxxxxxxx Load More Button xxxxxxxxxxxxxxxxxxx*/
+
+/*xxxxxxxxxxxxx Merchants,Offers,Deals xxxxxxxxxxxxxxxxxx*/
+
+/*Page footer*/
+.page-footer
+{
+    background-color: #0047ab;
+    position:absolute;
+    height: auto;
+    width: 100%;
+    margin-top:2%;
+  
+}
+
+
+.footertop
+{   
+    background-color:black;
+    margin:0;
+    height: 7vw;
+    width:100% ;
+    position:relative; 
+    vertical-align:middle;
+    font-size: 1.5vw;
+    color: white;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    text-align: center;
+}
+.footertop #footerpara
+{
+    float: left;
+    font-size: 1.5vw;
+    color: white;
+    margin:2vw;
+    padding: 0.2vw; 
+    margin:2vw;
+}
+
+.footertop #footerlist
+{
+    width: auto;
+    height: auto;
+    float: right;
+    list-style-type: none;
+    margin:2vw;
+    padding: 0.2vw;
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+    
+}
+
+
+#footerlist li a
+{
+    display:block;
+    font-size: 1.5vw;
+    color:white;
+    text-align: center;
+    padding: 1vh 1vw;
+    text-decoration: none;
+    margin: 0;
+    cursor: pointer;
+}
+
+#footerlist li a i
+{
+    font-size: 1.5vw;
+    color:white;
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+    margin: 0;
+    cursor: pointer;
+}
+
+li.facebook:hover,li.facebook:active
+{
+    background-color: #3b5998;
+}
+
+li.twitter:hover,li.twitter:active
+{
+    background-color: #00ACEE;
+}
+li.linkedin:hover,li.linkedin:active
+{
+    background-color: #0E76A8;
+}
+li.googleplus:hover,li.googleplus:active
+{
+    background-color: #d34836;
+}
+li.pintrest:hover,li.pintrest:active
+{
+    background-color: #E60023;
+}
+li.instagram:hover,li.instagram:active
+{
+    background-color: #8a3ab9;
+}
+li.slideshare:hover,li.slideshare:active
+{
+    background-color: #0077B5;
+}
+li.youtube:hover,li.youtube:active
+{
+    background-color: #ff0000;
+}
+
+
+.table
+{
+    background-color:inherit;
+    margin:0;
+    height: auto;
+    position:relative; 
+    vertical-align:middle;
+    bottom:-25%;
+    font-size: 1.5vw;
+    color: white;
+    padding: 0.5vw;
+}
+.table th
+{
+    padding:1vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+.table td
+{
+    padding: 1vw;
+    font-size: 1.3vw;
+}
+.table td:hover,.table td:active
+{
+    cursor: pointer;
+    background-color:rgba(0,142,204,0.18);
+    color: white;
+}
+#email:hover
+{
+    cursor: default;
+    background-color:inherit;
+}
+.email-container input[type=text]
+{
+    color: black;
+    width: 20vw;
+    font-size: 2.5vh;
+    padding: 0.5vw;
+    position: relative;
+    text-decoration-color: white;
+    border-radius: 0.5vw;
+}
+
+#joinnow
+{
+    color: white;
+    background-color:#EE7600 ;
+    font-size: 2.5vh;
+    padding:1vh 1vw;
+    border-radius:0.5vw;
+    cursor: pointer;
+    border: none;
+}
+
+.footermid
+{
+
+    background-color:inherit;
+    margin:0;
+    height: auto;
+    width:auto ;
+    position:relative; 
+    vertical-align:middle;
+    bottom:-23%;
+    font-size: 1.5vw;
+    color: white;
+    padding: 0.5vw;
+}
+.footerbottom
+{
+    position:relative;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding:0;
+    margin:0;
+    height: auto;
+    width:auto ;
+    padding: 1vw;
+    bottom: inherit;
+
+}
+.footerbottom p
+{
+     text-align: center;
+     font-size: 1vw;
+    line-height: 1.5;
+}
+/*xxxxxxxxxxxx Page footer xxxxxxxxxxxx*/
